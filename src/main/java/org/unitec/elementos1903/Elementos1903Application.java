@@ -23,7 +23,7 @@ public class Elementos1903Application implements CommandLineRunner {
         //Actualizar por ID
          // repoCliente.save(new Cliente(1,"Marioo","Maario@gmail.com"));
         //Buscar todos
-        for(Cliente c: repoCliente.findAll()){
+        for(Cliente c: repoCliente.findByEmail("Maario@gmail.com")){
             //Buscar por Id
             System.out.println(repoCliente.findById(1));
         }

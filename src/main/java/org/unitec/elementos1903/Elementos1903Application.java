@@ -17,16 +17,16 @@ public class Elementos1903Application implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         //Insertar
-        repoCliente.save(new Cliente(1,"Mario","Maario@gmail.com"));
-        repoCliente.save(new Cliente(2,"Msk","Maario@gmail.com"));
-        repoCliente.save(new Cliente(3,"Jose","Maario@gmail.com"));
+        //repoCliente.save(new Cliente(1,"Mario","Maario@gmail.com"));
+        //repoCliente.save(new Cliente(2,"Msk","Maario@gmail.com"));
+       // repoCliente.save(new Cliente(3,"Jose","Maario@gmail.com"));
         //Actualizar por ID
          // repoCliente.save(new Cliente(1,"Marioo","Maario@gmail.com"));
         //Buscar todos
-        for(Cliente c: repoCliente.findByEmail("Maario@gmail.com")){
+        //for(Cliente c: repoCliente.findByEmail("Maario@gmail.com")){
             //Buscar por Id
-            System.out.println(repoCliente.findById(1));
-        }
+           // System.out.println(repoCliente.findById(1));
+        //}
         //Borrar
         //repoCliente.deleteById(1);
     }
